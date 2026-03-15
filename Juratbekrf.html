@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smartfonlar</title>
+    <style>
+    
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+        nav {
+            background-color: #0f172a; 
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #f1f5f9;
+            margin: 15px;
+            font-weight: 500;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        nav a:hover {
+            background-color: #334155;
+            color: #38bdf8; 
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding:20px;
+        }
+        
+        section {
+            display: none;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            border-bottom: 10px solid #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        section:target {
+            display: block;
+        }
+
+        #index {
+            display: block;
+        }
+
+        :target ~ #index {
+            display: none; 
+        }
+
+        #index img, .gallery-box img {
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        #index img:hover, .gallery-box img:hover {
+            transform: rotate(360deg);
+        }
+
+        .gallery-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .gallery-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain; 
+          
+        }
+
+        table {
+           
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: center;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #38bdf8;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #yuborildi {
+            text-align: center;
+            border-bottom: 4px solid #22c55e;
+        }
+        h1, p {
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#index">Asosiy</a>
+        <a href="#models">Modeller</a>
+        <a href="#gallery">Galereya</a>
+        <a href="#about">Haqqinda</a>
+        <a href="#contact">Baylanis</a>
+    </nav>
+
+    <div class="container">
+     
+        
+        <section id="models">
+            <h1>Telefon Modellerimiz</h1>
+            <table>
+                <tr><th>Brend</th><th>Model</th></tr>
+                <tr><td>Apple</td><td>iPhone 17</td></tr>
+                <tr><td>Samsung</td><td>S24 Ultra</td></tr>
+                <tr><td>Redmi</td><td>Xiaomi 15</td></tr>
+                <tr><td>Honor</td><td>Honor X15</td></tr>
+            </table>
+        </section>
+
+        <section id="gallery">
+            <h1>Suwretler toplami</h1>
+            <div class="gallery-box">
+                <img src="https://darlingretail.com/cdn/shop/files/iPhone_15_Blue_Pure_Back_iPhone_15_Blue_Pure_Front_2up_Screen__WWEN_600x.jpg?v=1695103868">
+                <img src="https://www.mijia-shop.ru/wp-content/uploads/2024/10/Xiaomi-15.jpg">
+                 <img src="https://smart-honor.com/web/image/product.template/19365/image_1024?unique=7961f7d">
+                <img src="https://m.media-amazon.com/images/I/619DBXmZxeL.jpg">
+                <img src="https://www.kazachok.com.ua/image/catalog/i/af/ld/82ac7c1913694dc7135b984add3a4887.jpg">
+                <img src="https://s.alicdn.com/@sc04/kf/Hdac1c05e1a57405b8f996edc05ba99cfm/High-Quality-Vivo-Y35-5G-Mobile-Phone-Cheap-Second-Hand-with-5000mAh-Battery-LTE-Connectivity-Under-1000.jpg">
+            </div>
+        </section>
+
+       <section id="about">
+         <h1>Iphone</h1>
+         <p>iPhone - Apple tárepinen islep shigarılgan smartfon. Ol 2007-jılı usınılǵan hám iOS sistemasında isleydi. Sapalı kamera, kúshli islew tezligi hám zamanagóy dizaynı menen belgili.</p>
+         <h1>Samsung</h1>
+         <p>Samsung - Qubla Koreyanıń texnologiya kompaniyası. Ol smartfonlar, televizorlar hám basqa da elektron qurılmalar islep shıǵaradı. Samsung telefonları Android sistemasında isleydi hám zamanagóy dizayn hám kúshli imkaniyatları menen belgili.</p>
+         <h1>Redmi</h1>
+         <p>Redmi - Xiaomi kompaniyasına tiyisli smartfon brendi. Ol arzan baha hám jaqsı texnikalıq imkaniyatları menen belgili. Redmi telefonları Android sistemasında isleydi hám keń xalıq ushın mólsherlengen.</p>
+         <h1>Honor</h1>
+         <p>Honor - Qıtaydıń smartfon brendi. Ol zamanagóy dizayn hám kúshli texnikalıq imkaniyatlarǵa ie telefonlar islep shıǵaradı. Honor qurilmaları Android sistemasında isleydi hám orta hám joqarı segment ushın arnalǵan.</p>
+       </section>
+       
+    <section id="contact">
+            <h1>Baylanis ushin!</h1>
+            <form action="#yuborildi"> 
+                <input type="text" placeholder="At" required>
+                <textarea placeholder="Xabar" rows="4" required></textarea>
+                <button type="submit">Jiberiw</button>
+            </form>
+        </section>
+
+        <section id="yuborildi">
+            <h1 style="color: #22c55e;">✅Muvaffaqiyatli!</h1>
+            <p>Xabaringiz yuborildi. Rahmat!</p>
+            <br>
+            <a href="#index" style="color: #38bdf8; text-decoration: none; font-weight: bold;">← Asosiyga qaytish</a>
+        </section>
+        
+ <section id="index">
+            <h1>Xosh keldińiz!</h1>
+            <p>Bul portal zamanagóy texnologiyalar álemindegi eń sońǵı jańalıqlar hám
+flagman qurılmalardı úyreniw ushın jaratılǵan. Biziń maqsetimiz -
+paydalanıwshılarǵa eń sapalı smartfonlar, olardıń texnikalıq ózgeshelikleri.
+hám imkaniyatları haqqında anıq maǵlıwmat beriw bolıp tabıladı.</p>
+            <img src="https://www.cnet.com/a/img/resize/cf290a0a573d33729ac96b1838ad9f0f6af49b09/hub/2025/11/13/035c2607-1dde-4df2-9bda-6f34337ecfc2/p1008229-1.jpg?auto=webp&fit=crop&height=900&width=1200" style="border-radius: 15px; width: 100%; height: 320px; object-fit: cover;">
+        </section>
+
+    </div>
+
+</body>
+</html>
